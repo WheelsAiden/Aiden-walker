@@ -14,6 +14,9 @@ colors = {
 # Prints a welcome message in blue to the console
 print(f"{colors['blue']}\nWelcome to InfoTechCenter V1.0\n{colors['reset']}")
 
+timeToSleep = 2 #variable to set the time libary to 2 seconds when called
+time.sleep(timeToSleep) # Calling the time to sleep libary with the varible TimeToSleep value
+
 # Initialize variables
 x = 0  # This variable keeps track of the loop iterations (up to 20)
 ellipsis = 0  # This controls the number of dots displayed after the message
@@ -29,7 +32,7 @@ while x != 20:
     message = (f"{color}Infotech Center System Booting" + "." * ellipsis + colors["reset"])
     ellipsis += 1  # Add one dot (.) to the message each time
     sys.stdout.write("\r" + message)  # Overwrite the current line in the console with the new message
-    time.sleep(.5)  # Wait for half a second before the next iteration
+    time.sleep(1)  # Wait for half a second before the next iteration
 
     # Reset the ellipsis back to 0 after it reaches 3 dots
     if ellipsis == 4:
