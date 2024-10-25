@@ -1,5 +1,7 @@
 import sys  # Imports the sys module for system-specific parameters and functions
 import time  # Imports the time module to use the sleep function for delays
+import random
+from time import sleep
 
 # ANSI escape sequences for text colors
 colors = {
@@ -89,9 +91,6 @@ vehicleResponseSystem()
 
 print("\n*************************************\n")
 print("Gasoline Branch\n")
-
-import random
-from time import sleep
 
 # Constants for gas levels and gas stations
 GAS_LEVELS = ["Empty", "Low", "Quarter Tank", "Half Tank", "Three Quarter Tank", "Full Tank"]
